@@ -1,0 +1,27 @@
+name: CI for KHANDELWAL GROUP
+
+on:
+  push:
+    branches:
+      - main  # Jab bhi tum main branch pe code push karoge, yeh trigger hoga
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Yeh runner hoga jo tumhare code ko test karega
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Ye step tumhara code GitHub Actions pe pull karega
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'  # Python version set karo, jo tumhare project mein ho
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt  # Ye step tumhare dependencies install karega
+
+      - name: Run tests
+        run: |
+          pytest tests/  # Agar tumne test likhe hain, toh wo run honge
