@@ -4,11 +4,9 @@ const urlsToCache = [
   "/index.html",
   "/manifest.json",
   "/icon-192.png",
-  "/icon-512.png",
-  // Add other important files here if needed
+  "/icon-512.png"
 ];
 
-// Install event
 self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
@@ -17,7 +15,6 @@ self.addEventListener("install", function (event) {
   );
 });
 
-// Fetch event
 self.addEventListener("fetch", function (event) {
   event.respondWith(
     caches.match(event.request).then(function (response) {
