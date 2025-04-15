@@ -1,15 +1,29 @@
-from fastapi import FastAPI, Request
-from app.inference import predict
+from fastapi import FastAPI
+from pydantic import BaseModel
 
-app = FastAPI()
+# App initialization
+app = FastAPI(
+    title="KHANDELWAL GROUP AI SYSTEM",
+    description="A revolutionary AI-Powered Bharat System by Dr. Rajesh Khandelwal",
+    version="1.0.0"
+)
 
+# Home route - health check
 @app.get("/")
-def root():
-    return {"message": "AI Server Running!"}
+def read_root():
+    return {
+        "status": "LIVE ✅",
+        "system": "KHANDELWAL AI SYSTEM",
+        "powered_by": "Dr. Rajesh Khandelwal",
+        "message": "🚀 Jai Bharat | Sanatan x AI x Dharma x Business x Future 🌍"
+    }
+
+# Optional: AI Response endpoint starter
+class InputData(BaseModel):
+    message: str
 
 @app.post("/predict")
-async def make_prediction(request: Request):
-    data = await request.json()
-    input_text = data.get("text", "")
-    result = predict(input_text)
-    return result
+def predict(data: InputData):
+    return {
+        "response": f"🧠 AI RECEIVED: '{data.message}' — processing soon with KHANDELWAL INTELLIGENCE ENGINE ⚙️"
+    }
