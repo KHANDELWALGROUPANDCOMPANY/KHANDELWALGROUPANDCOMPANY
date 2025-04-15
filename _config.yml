@@ -1,5 +1,17 @@
 title: KHANDELWAL GROUP AND COMPANY
 description: Official Website of KHANDELWAL GROUP AND COMPANY | DR RAJESH KHANDELWAL IBC
-baseurl: ""
-url: "https://khandelwalgroupandcompany.github.io"
+baseurl: "" 
+url: "https://khandelwalgroupandcompany.github.io" 
 theme: minima
+
+# Google Analytics GA4 Tracking ID
+google_analytics: G-6ZCB7LKV81
+
+# SEO Tags
+seo:
+  keywords: "KHANDELWAL GROUP, KHANDELWAL GROUP AND COMPANY, AI, Automation, Investment, Bharat, Company Trust, DR RAJESH KHANDELWAL IBC"
+  description: "Official Website of KHANDELWAL GROUP AND COMPANY | DR RAJESH KHANDELWAL IBC"
+  author: "DR RAJESH KHANDELWAL IBC"
+
+# Google Search Console verification (optional)
+google_search_console: ""
