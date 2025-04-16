@@ -1,3 +1,10 @@
-# KHANDELWAL GROUP AND COMPANY
+# AI Chat Interface
 
-This is the official website powered by GitHub Pages and Jekyll.
+## Stack
+
+- Next.js
+- Typescript
+- Jotai
+- Tailwindcss
+
+- starting point: https://github.com/enricoros/nextjs-chatgpt-app
