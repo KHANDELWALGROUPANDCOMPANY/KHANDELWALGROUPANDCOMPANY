@@ -1,10 +1,15 @@
-# AI Chat Interface
 
-## Stack
+# KHANDELWAL AI CHAT (GitHub-Only Auto System)
 
-- Next.js
-- Typescript
-- Jotai
-- Tailwindcss
+✅ Live hosted on GitHub Pages  
+✅ Flutter Web PWA Chat App  
+✅ Backend simulation via GitHub Actions  
+✅ Legal docs included
 
-- starting point: https://github.com/enricoros/nextjs-chatgpt-app
+## Structure
+- `index.html` — Entry point with PWA style iframe
+- `flutter-web/` — Web-compiled version of Flutter app
+- `backend/` — Python AI backend (simulated via GitHub Actions)
+- `legal/` — Privacy Policy & Terms of Use
+
+© 2025 Khandelwal Group & Company
