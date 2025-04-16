@@ -1,11 +1,1 @@
-title: KHANDELWAL GROUP AND COMPANY
-description: Empowering Bharat and the World with AI, Automation, Investment, and Innovation.
-url: "https://khandelwalgroupandcompany.github.io"
-baseurl: ""
-theme: minima
-google_analytics: G-6ZCB7LKV81
-
-# SEO meta info
-author: DR RAJESH KHANDELWAL IBC
-keywords: KHANDELWAL GROUP, KHANDELWAL GROUP AND COMPANY, DR RAJESH KHANDELWAL IBC, Bada Business, AI Bharat, Bharat Trust Index, Real Business, Investment, Startup, Bharat Digital Ecosystem
-lang: en_IN
+theme: jekyll-theme-cayman
