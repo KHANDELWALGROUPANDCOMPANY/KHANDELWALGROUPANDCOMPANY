@@ -1,0 +1,15 @@
+
+name: Simulate AI Backend
+
+on:
+  push:
+    paths:
+      - 'backend/**'
+
+jobs:
+  backend_simulation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Simulate backend update
+        run: echo "Backend updated. Simulating AI via GitHub Action."
