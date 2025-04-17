@@ -1,0 +1,1 @@
+This is placeholder content for sanatan_principles.md in the texts section.

@@ -1,0 +1,1 @@
+This is placeholder content for freedom_fighters_of_bharat.md in the texts section.

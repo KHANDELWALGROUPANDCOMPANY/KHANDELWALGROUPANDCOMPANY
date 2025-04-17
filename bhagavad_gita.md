@@ -1,0 +1,1 @@
+This is placeholder content for bhagavad_gita.md in the texts section.

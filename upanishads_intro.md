@@ -1,0 +1,1 @@
+This is placeholder content for upanishads_intro.md in the texts section.
