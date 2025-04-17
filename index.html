@@ -99,10 +99,33 @@
     <a href="https://colab.research.google.com/" target="_blank">🖼️ Image Gen (Stable Diffusion)</a>
     <a href="https://replit.com/" target="_blank">📚 Private GPT</a>
   </div>
+<div style="margin-top: 40px;">
+  <h2>Ask BHARAT AI</h2>
+  <input type="text" id="promptInput" placeholder="Type something..." style="padding:10px; width:60%; border:1px solid #ccc; border-radius:5px;" />
+  <br><br>
+  <button onclick="sendPrompt()" style="padding:10px 20px; background-color:#00796b; color:white; border:none; border-radius:5px;">Ask</button>
+  <p id="resultArea" style="margin-top:20px; font-weight:bold;">Waiting for response...</p>
+</div>
 
   <footer>
     🇮🇳 Powered by DR RAJESH KHANDELWAL IBC & KHANDELWAL GROUP AND COMPANY
   </footer>
+<script>
+  async function sendPrompt() {
+    const prompt = document.getElementById("promptInput").value;
+
+    const res = await fetch("https://khandelwalgroupandcompany.onrender.com/generate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ prompt: prompt }),
+    });
+
+    const data = await res.json();
+    document.getElementById("resultArea").innerText = data.response;
+  }
+</script>
 
 </body>
 </html>
