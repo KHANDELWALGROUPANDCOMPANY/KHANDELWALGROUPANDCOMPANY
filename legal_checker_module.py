@@ -1,0 +1,1 @@
+Placeholder content for legal_checker_module.py
