@@ -1,0 +1,1 @@
+# AI logic to analyze game rules and legality
